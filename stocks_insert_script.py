@@ -37,7 +37,7 @@ def get_stock_prices():
                         protocol='json')
 
 
-def run(interval=300):  # interval in seconds
+def run(interval=60*60*24):  # interval in seconds
     while 1:
         try:
             get_stock_prices()
