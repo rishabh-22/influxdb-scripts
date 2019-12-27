@@ -50,8 +50,9 @@ def get_system_data():
                         protocol='json')
 
 
-def run(interval=5):  # interval in seconds
+def run(interval=1):  # interval in seconds
     global net_recv_prev, net_sent_prev
+    print("Script is running, press Ctrl+C to stop!")
     while 1:
         try:
             get_system_data()
@@ -65,4 +66,3 @@ def run(interval=5):  # interval in seconds
 
 
 run()
-
